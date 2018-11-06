@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>404</title>
+    <style>
+html, body {
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+main, div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>div {
+    margin-left: 2vw;
+    width: 25vw;
+    height: 30vw;
+}
+
+main>div:nth-child(odd) {
+    background: no-repeat center / contain url(four.svg);
+}
+
+body>div {
+    position: absolute;
+    left: 30vw;
+    top: calc(50vh - 20vw);
+    width: 40vw;
+    height: 40vw;
+    background: no-repeat center / contain url(foo.svg);
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div></div>
+        <div></div>
+        <div></div>
+    </main>
+    <div></div>
+</body>
+</html>
